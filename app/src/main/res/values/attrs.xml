@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WatchesView">
+        <attr name="arrows_color" format="color"/>
+        <attr name="clock_face_color" format="color"/>
+        <attr name="background_color" format="color"/>
+        <attr name="arrows_width" format="dimension"/>
+        <attr name="clock_face_width" format="dimension"/>
+        <attr name="seconds_arrow_accuracy" format="boolean"/>
+    </declare-styleable>
+</resources>

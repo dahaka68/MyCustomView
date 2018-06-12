@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context="com.example.dahaka.mycustomview.MainActivity">
+
+    <com.example.dahaka.mycustomview.WatchesView
+        android:id="@+id/custom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        custom:clock_face_width="2dp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toStartOf="@+id/guideline"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/bckgrColorSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toStartOf="@+id/guideline2"
+        custom:layout_constraintHorizontal_bias="1.0"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintVertical_bias="0.26" />
+
+    <Switch
+        android:id="@+id/cFColorSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintStart_toStartOf="@+id/bckgrColorSwitch"
+        custom:layout_constraintTop_toBottomOf="@+id/bckgrColorSwitch"
+        custom:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/background_color"
+        android:textColor="@android:color/black"
+        custom:layout_constraintBottom_toBottomOf="@+id/bckgrColorSwitch"
+        custom:layout_constraintEnd_toStartOf="@+id/bckgrColorSwitch"
+        custom:layout_constraintHorizontal_bias="0.0"
+        custom:layout_constraintStart_toStartOf="@+id/guideline"
+        custom:layout_constraintTop_toTopOf="@+id/bckgrColorSwitch" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/clock_face_color"
+        android:textColor="@android:color/black"
+        custom:layout_constraintBottom_toBottomOf="@+id/cFColorSwitch"
+        custom:layout_constraintEnd_toStartOf="@+id/cFColorSwitch"
+        custom:layout_constraintHorizontal_bias="0.0"
+        custom:layout_constraintStart_toStartOf="@+id/guideline"
+        custom:layout_constraintTop_toTopOf="@+id/cFColorSwitch" />
+
+    <Switch
+        android:id="@+id/arrowsColorSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintStart_toStartOf="@+id/cFColorSwitch"
+        custom:layout_constraintTop_toBottomOf="@+id/cFColorSwitch"
+        custom:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/arrows_color"
+        android:textColor="@android:color/black"
+        custom:layout_constraintBottom_toBottomOf="@+id/arrowsColorSwitch"
+        custom:layout_constraintEnd_toStartOf="@+id/arrowsColorSwitch"
+        custom:layout_constraintHorizontal_bias="0.0"
+        custom:layout_constraintStart_toStartOf="@+id/guideline"
+        custom:layout_constraintTop_toTopOf="@+id/arrowsColorSwitch" />
+
+    <Switch
+        android:id="@+id/arrowsWidthSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintStart_toStartOf="@+id/arrowsColorSwitch"
+        custom:layout_constraintTop_toBottomOf="@+id/arrowsColorSwitch"
+        custom:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/arrows_width"
+        android:textColor="@android:color/black"
+        custom:layout_constraintBottom_toBottomOf="@+id/arrowsWidthSwitch"
+        custom:layout_constraintEnd_toStartOf="@+id/arrowsWidthSwitch"
+        custom:layout_constraintHorizontal_bias="0.0"
+        custom:layout_constraintStart_toStartOf="@+id/guideline"
+        custom:layout_constraintTop_toTopOf="@+id/arrowsWidthSwitch" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        custom:layout_constraintGuide_percent="0.59" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        custom:layout_constraintGuide_percent="0.94" />
+</android.support.constraint.ConstraintLayout>

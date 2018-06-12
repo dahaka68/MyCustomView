@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyCustomView</string>
+    <string name="arrows_width">arrows width</string>
+    <string name="arrows_color">arrows color</string>
+    <string name="clock_face_color">clock face color</string>
+    <string name="background_color">background color</string>
+</resources>
